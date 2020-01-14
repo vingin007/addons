@@ -1,0 +1,31 @@
+{
+    "name": "vingin007/addons",
+    "description": "addons for ThinkPHP 5.1.x",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vingin007",
+            "email": "2681977867@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0",
+        "topthink/think-helper": ">=1.0.4",
+        "topthink/think-installer": ">=1.0.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\": "src/"
+        },
+        "files": [
+            "src/common.php"
+        ]
+    },
+    "extra": {
+        "think-config": {
+            "addons": "src/config.php"
+        }
+    }
+}
